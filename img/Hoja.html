@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitio Web Personal</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            height:100vh;
+        }
+
+        /* ENCABEZADO */
+        header{
+            width:100%;
+            height:90px;
+            background:#2b1020;
+            text-align:center;
+            line-height:90px;
+            font-size:40px;
+            font-weight:bold;
+            border-bottom:1px solid #ccc;
+            color:white;
+        }
+
+        /* CONTENEDOR */
+        .contenedor{
+            display:flex;
+            height:calc(100vh - 90px);
+        }
+
+        /* MENÚ */
+        #menu{
+            width:250px;
+            border-right:1px solid #ccc;
+            height:100%;
+        }
+
+        /* CONTENIDO */
+        #contenido{
+            flex:1;
+            height:100%;
+            border:none;
+            background: #2b1020;
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- TÍTULO ARRIBA -->
+    <header>
+        Mi Sitio Web - 1590-25-18267
+    </header>
+
+    <!-- MENÚ Y CONTENIDO -->
+    <div class="contenedor">
+
+        <iframe id="menu"
+        src="menu2.html"
+        name="menuFrame"
+        scrolling="auto"></iframe>
+
+        <iframe id="contenido"
+        src="
+        name="contenidoFrame"
+                scrolling="auto"></iframe>
+
+    </div>
+
+</body>
+</html>

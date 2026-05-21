@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bienvenida</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e9ecef;
+            font-family: 'Arial', sans-serif;
+        }
+        .contenedor-imagen {
+            text-align: center;
+            padding: 20px;
+        }
+        .contenedor-imagen img {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 5px solid white;
+        }
+        .texto-bienvenida {
+            margin-top: 25px;
+            color: #2c3e50;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-imagen">
+        <!-- Cambia "mi_foto.jpg" por el nombre de tu imagen -->
+        <img src="data:image/png;base64,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" alt="Mi imagen de bienvenida">
+        <div class="texto-bienvenida">Selecciona una opción del menú para comenzar</div>
+    </div>
+</body>
+</html>

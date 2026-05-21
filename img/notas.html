@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+
+            font-family:"Poppins", sans-serif;
+
+            /* Fondo elegante oscuro */
+            background: linear-gradient(135deg, #1a1026, #2d1639, #471c52);
+
+            min-height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            padding:40px;
+        }
+
+        .container{
+            width:100%;
+            max-width:1000px;
+        }
+
+        h1{
+
+            text-align:center;
+
+            color:#ffffff;
+
+            font-size:38px;
+
+            margin-bottom:35px;
+
+            font-weight:700;
+
+            letter-spacing:1px;
+
+            text-shadow:
+                0 0 10px rgba(255,255,255,0.4),
+                0 0 20px rgba(255,105,180,0.5);
+        }
+
+        .card{
+
+            background: rgba(255,255,255,0.08);
+
+            backdrop-filter: blur(14px);
+
+            border-radius:30px;
+
+            padding:35px;
+
+            border:1px solid rgba(255,255,255,0.15);
+
+            box-shadow:
+                0 10px 35px rgba(0,0,0,0.45);
+
+            transition:0.4s;
+        }
+
+        .card:hover{
+
+            transform:translateY(-5px);
+
+            box-shadow:
+                0 15px 45px rgba(255,105,180,0.3);
+        }
+
+        table{
+
+            width:100%;
+
+            border-collapse:collapse;
+
+            overflow:hidden;
+
+            border-radius:20px;
+        }
+
+        thead{
+
+            background: linear-gradient(90deg, #ff4fa3, #c94fff);
+
+            color:white;
+        }
+
+        th, td{
+
+            padding:18px;
+
+            text-align:center;
+        }
+
+        th{
+
+            font-size:18px;
+
+            letter-spacing:0.5px;
+        }
+
+        tbody tr{
+
+            transition:0.3s;
+        }
+
+        tbody tr:nth-child(odd){
+
+            background: rgba(255,255,255,0.08);
+        }
+
+        tbody tr:nth-child(even){
+
+            background: rgba(255,255,255,0.14);
+        }
+
+        tbody tr:hover{
+
+            background: rgba(255,105,180,0.22);
+
+            transform:scale(1.01);
+        }
+
+        tbody td{
+
+            color:#ffffff;
+
+            font-weight:500;
+        }
+
+        .curso{
+
+            text-align:left;
+
+            color:#ff9bd2;
+
+            font-weight:600;
+        }
+
+        @media(max-width:768px){
+
+            h1{
+                font-size:28px;
+            }
+
+            th, td{
+                padding:12px;
+                font-size:14px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌸 Notas del Primer y Segundo Parcial 🌸</h1>
+
+        <div class="card">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Primer parcial</th>
+                        <th>Segundo parcial</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td class="curso">Desarrollo</td>
+                        <td>11</td>
+                        <td>15</td>
+                    </tr>
+
+                    <tr>
+                        <td class="curso">Introducción a los sistemas de cómputo</td>
+                        <td>8</td>
+                        <td>14</td>
+                    </tr>
+
+                    <tr>
+                        <td class="curso">Lógica</td>
+                        <td>11</td>
+                        <td>14</td>
+                    </tr>
+
+                    <tr>
+                        <td class="curso">Metodología</td>
+                        <td>14</td>
+                        <td>11</td>
+                    </tr>
+
+                    <tr>
+                        <td class="curso">Contabilidad</td>
+                        <td>14</td>
+                        <td>14</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería de Gatitos</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #2b1020, #4a1633);
+      padding:40px;
+      color:white;
+      min-height:100vh;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:3rem;
+      color:#fff;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+    }
+
+    .card{
+      position:relative;
+      overflow:hidden;
+      border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.4);
+      transition:0.4s;
+      cursor:pointer;
+      background:#000;
+    }
+
+    .card:hover{
+      transform:translateY(-10px) scale(1.02);
+      box-shadow:0 15px 35px rgba(255,105,180,0.5);
+    }
+
+    .card img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+      transition:0.5s;
+      display:block;
+    }
+
+    .card:hover img{
+      transform:scale(1.1);
+    }
+
+    .overlay{
+      position:absolute;
+      bottom:0;
+      width:100%;
+      padding:20px;
+      background:linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+    }
+
+    .overlay h3{
+      font-size:1.2rem;
+      margin-bottom:5px;
+      color:#ffb6d9;
+    }
+
+    .overlay p{
+      font-size:0.9rem;
+      opacity:0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🐱 Galería De Gatos</h1>
+
+  <div class="gallery">
+
+    <!-- FOTO 1 -->
+    <div class="card">
+      <img src="https://th.bing.com/th/id/R.67f45e761519fd772264f8186eea8da9?rik=j1irfg6WT2MQTA&riu=http%3a%2f%2flh5.ggpht.com%2f-AMQf7on8nuY%2fUbtRxOLeRyI%2fAAAAAAAAACs%2fnKmm66KQdJE%2fs9000%2fgatitos-bebe-3.jpg&ehk=n4TNCpyMqKUwMjPGhRtQLRzTCMmV41R8Qx%2beL2hLA%2bE%3d&risl=&pid=ImgRaw&r=0" alt="Gato 1">
+      <div class="overlay">
+        <h3>Foto 1</h3>
+             </div>
+    </div>
+
+    <!-- FOTO 2 -->
+    <div class="card">
+      <img src="https://st3.depositphotos.com/2289871/15943/i/450/depositphotos_159430638-stock-photo-cute-tabby-kittens-sleeping-hugging.jpg" alt="Gato 2">
+      <div class="overlay">
+        <h3>Foto 2</h3>
+              </div>
+    </div>
+
+    <!-- FOTO 3 -->
+    <div class="card">
+      <img src="https://1.bp.blogspot.com/-YgUpXfy-v_g/V1enMNylDwI/AAAAAAAAAuU/XCQjEp6HPQoTSVvrdwV4hh1EjHFddcFiACKgB/s1600/cute-kittens-in-basket.jpg" alt="Gato 3">
+      <div class="overlay">
+        <h3>Foto 3</h3>
+      
+      </div>
+    </div>
+
+    <!-- FOTO 4 -->
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/I_K62rAPCKY/maxresdefault.jpg" alt="Gato 4">
+      <div class="overlay">
+        <h3>Foto 4</h3>
+      
+      </div>
+    </div>
+
+    <!-- FOTO 5 -->
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2018/07/13/10/20/kittens-3535404_1280.jpg" alt="Gato 5">
+      <div class="overlay">
+        <h3>Foto 5</h3>
+      
+      </div>
+    </div>
+
+    <!-- FOTO 6 -->
+    <div class="card">
+      <img src="https://th.bing.com/th/id/R.f795100c9ebac41825ebb8751aab7dbb?rik=Qi8rdRWYFN5Niw&riu=http%3a%2f%2flh5.ggpht.com%2f_yFd7v-hXaTg%2fTQj8KCaJtQI%2fAAAAAAAAAdc%2fXN8mAf3b-Dg%2fs9000%2f1024x768_gatito_adorable.jpg&ehk=18rIx%2fR6OhgQ2dPegAYELGS7HmYmeJWXHVkH1GyL6Ug%3d&risl=&pid=ImgRaw&r=0" alt="Gato 6">
+      <div class="overlay">
+        <h3>Foto 6</h3>
+       
+      </div>
+    </div>
+
+    <!-- FOTO 7 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/3a/8b/b6/3a8bb626a760a7cac357825ba986d835.jpg" alt="Gato 7">
+      <div class="overlay">
+        <h3>Foto 7</h3>
+      
+      </div>
+    </div>
+
+    <!-- FOTO 8 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/474x/0d/8d/a9/0d8da9da11894ad7a7d91a74d007aca9.jpg?nii=t" alt="Gato 8">
+      <div class="overlay">
+        <h3>Foto 8</h3>
+        
+      </div>
+    </div>
+
+    <!-- FOTO 9 -->
+    <div class="card">
+      <img src="https://th.bing.com/th/id/R.173b160c1ae69899eca447c8548706a5?rik=t7SsVrLrDhRgcQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-0efMNHUCu9w%2fT5jgOMepSLI%2fAAAAAAAAPPo%2f_o7ZQXCuVNI%2fs1600%2f1%252Bgatos%252By%252Bgatitos%252Bhermosos%2c%252Btiernos%252B(4).jpg&ehk=ypE%2fYwnjux5AO0Li2rhFBNBd43d3ZqCc6yEm12uEBXs%3d&risl=&pid=ImgRaw&r=0" alt="Gato 9">
+      <div class="overlay">
+        <h3>Foto 9</h3>
+     
+      </div>
+    </div>
+
+    <!-- FOTO 10 -->
+    <div class="card">
+      <img src="https://4.bp.blogspot.com/-vRSiLjHLmvU/UQniQ3f1I4I/AAAAAAABldI/ZrP7ChjAtck/s1600/gatito-kitten.jpg" alt="Gato 10">
+      <div class="overlay">
+        <h3>Foto 10</h3>
+     
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

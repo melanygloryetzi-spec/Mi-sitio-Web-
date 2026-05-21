@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitio Web Personal</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            height:100vh;
+        }
+
+        /* ENCABEZADO */
+        header{
+            width:100%;
+            height:90px;
+            background:#2b1020;
+            text-align:center;
+            line-height:90px;
+            font-size:40px;
+            font-weight:bold;
+            border-bottom:1px solid #ccc;
+            color:white;
+        }
+
+        /* CONTENEDOR */
+        .contenedor{
+            display:flex;
+            height:calc(100vh - 90px);
+        }
+
+        /* MENÚ */
+        #menu{
+            width:250px;
+            border-right:1px solid #ccc;
+            height:100%;
+        }
+
+        /* CONTENIDO */
+        #contenido{
+            flex:1;
+            height:100%;
+            border:none;
+            background: #2b1020;
+          }
+        .contenedor-imagen {
+            text-align: center;
+            padding: 20px;
+        }
+        .contenedor-imagen img {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 5px solid white;
+        }
+        .texto-bienvenida {
+            margin-top: 25px;
+            color: #2c3e50;
+            font-size: 1.3em;
+            font-weight: bold;
+
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- TÍTULO ARRIBA -->
+    <header>
+        Mi Sitio Web - 1590-26-6896
+    </header>
+
+    <!-- MENÚ Y CONTENIDO -->
+    <div class="contenedor">
+
+        <iframe id="menu"
+        src="menu2.html"
+        name="menuFrame"
+        scrolling="auto"></iframe>
+
+        <iframe id="contenido"
+        <img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGLipB7kxHpNEMwILqvXzC_afrfZ-IZzT4ew&s"    name="contenidoFrame" style="display:   
+block; margin: auto:">
+                scrolling="auto"></iframe>
+
+    </div>
+
+</body>
+</html>

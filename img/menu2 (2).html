@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menú</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #2b1020;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .menu-container {
+            width: 90%;
+            max-width: 200px;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .menu-title {
+            color: #FFFFFF; /* Solo el título en blanco */
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .menu-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 3px;
+            background: #ff66b2;
+            border-radius: 3px;
+        }
+        
+        .btn-effect {
+            position: relative;
+            display: inline-block;
+            width: 90%;
+            padding: 10px 15px;
+            margin: 10px auto;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            overflow: hidden;
+            cursor: pointer;
+            z-index: 1;
+            
+            /* Tonos rosados */
+            background-color: #ff4f9a;
+            
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Hover rosado brillante */
+        .btn-effect:hover {
+            background-color: #ff80bf;
+            box-shadow: 
+                0 0 10px #ff66b2,
+                0 0 20px rgba(255, 102, 178, 0.6),
+                0 0 30px rgba(255, 102, 178, 0.4);
+            text-shadow: 0 0 5px white;
+        }
+        
+        /* Efecto clic */
+        .btn-effect:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1 class="menu-title">Menu de Opciones</h1>
+        
+        <a href="cv.html" class="btn-effect" target="contenidoFrame">Hoja de Vida</a>
+        <a href="Mel.html" class="btn-effect" target="contenidoFrame">Notas</a>
+        <a href="galeria.html" class="btn-effect" target="contenidoFrame">Galeria</a>
+        <a href="youtube.html" class="btn-effect" target="contenidoFrame">Video</a>
+        <a href="juego.html" class="btn-effect" target="contenidoFrame">Juego</a>
+    </div>
+</body>
+</html>
